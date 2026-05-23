@@ -1,0 +1,6 @@
+name = "whatsapp-sender-api"
+main = "index.ts"
+compatibility_date = "2024-01-01"
+
+# Secrets are set via: npx wrangler secret put SECRET_NAME
+# Do NOT put secret values here — this file is committed to git
