@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "export": "next build && next export",
-    "lint": "next lint"
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "pages:build": "npx @cloudflare/next-on-pages",
+  "deploy": "npm run pages:build && wrangler pages deploy"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.43.0",
@@ -23,5 +23,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "typescript": "^5"
+    "@cloudflare/next-on-pages": "^1.12.0",
+    "wrangler": "^3.0.0",
   }
 }

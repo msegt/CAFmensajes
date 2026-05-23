@@ -3,6 +3,7 @@
  * Returns all contacts from Supabase.
  * Supports ?opted_in=true to filter to opted-in contacts only.
  */
+export const runtime = 'edge';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { supabaseAdmin } from '@/lib/supabaseAdmin';
 import type { Contact } from '@/lib/supabase';

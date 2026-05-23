@@ -7,6 +7,7 @@
  *   Verify Token → value of WHATSAPP_VERIFY_TOKEN in .env.local
  *   Subscribe to → messages, message_status
  */
+export const runtime = 'edge';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { supabaseAdmin } from '@/lib/supabaseAdmin';
 

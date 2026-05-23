@@ -3,6 +3,7 @@
  * Returns message_log rows, most recent first.
  * Optional query params: ?limit=50&contact_id=123
  */
+export const runtime = 'edge';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { supabaseAdmin } from '@/lib/supabaseAdmin';
 

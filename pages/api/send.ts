@@ -5,6 +5,7 @@
  * Fetches selected contacts from Supabase, sends a WhatsApp message to each,
  * and writes the result back to message_log.
  */
+export const runtime = 'edge';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { supabaseAdmin } from '@/lib/supabaseAdmin';
 import { sendTextMessage, sendTemplate } from '@/lib/whatsapp';
